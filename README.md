@@ -4,6 +4,12 @@
 
 ## Change Log
 
+-   2024/3/xx
+    -   add Google logo sign in button
+    -   get the redirect to work properly
+    -   get the Google sign in page to open in a small window like it normally does
 -   2024/3/11
     -   connected to Supabase
     -   deployed to Vercel
+-   2024/3/12
+    -   started Google login

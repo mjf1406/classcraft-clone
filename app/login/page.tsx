@@ -125,13 +125,13 @@ export default function Login({
                     placeholder="••••••••"
                     required
                 />
-                <SubmitButton
+                {/* <SubmitButton
                     formAction={signInWithGoogle}
-                    className="px-4 py-2 mb-2 bg-green-700 rounded-md text-foreground"
+                    className="px-4 py-2 mb-2 bg-blue-700 rounded-md text-foreground"
                     pendingText="Signing In..."
                 >
                     Sign in with Google
-                </SubmitButton>
+                </SubmitButton> */}
                 <SubmitButton
                     formAction={signIn}
                     className="px-4 py-2 mb-2 bg-green-700 rounded-md text-foreground"

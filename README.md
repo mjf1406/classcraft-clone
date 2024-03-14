@@ -8,6 +8,10 @@
     -   add Google logo sign in button
     -   get the redirect to work properly
     -   get the Google sign in page to open in a small window like it normally does
+-   2024/3/14
+    -   added Logo component with placeholer logo
+    -   remove tutorial components
+    -   purchased classquest.app
 -   2024/3/11
     -   connected to Supabase
     -   deployed to Vercel

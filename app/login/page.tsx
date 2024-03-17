@@ -80,7 +80,7 @@ export default function Login({
         <div className="flex flex-col justify-center flex-1 w-full gap-2 px-8 sm:max-w-md">
             <Link
                 href="/"
-                className="absolute flex items-center px-4 py-2 text-sm no-underline rounded-md left-8 top-8 text-foreground bg-btn-background hover:bg-btn-background-hover group"
+                className="absolute flex items-center px-4 py-2 text-sm no-underline rounded-md left-8 top-8 text-text bg-btn-background hover:bg-btn-background-hover group"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ export default function Login({
                 Back
             </Link>
 
-            <form className="flex flex-col justify-center flex-1 w-full gap-2 animate-in text-foreground">
+            <form className="flex flex-col justify-center flex-1 w-full gap-2 animate-in text-text">
                 <label
                     className="text-md"
                     htmlFor="email"
@@ -127,27 +127,27 @@ export default function Login({
                 />
                 {/* <SubmitButton
                     formAction={signInWithGoogle}
-                    className="px-4 py-2 mb-2 bg-blue-700 rounded-md text-foreground"
+                    className="px-4 py-2 mb-2 bg-blue-700 rounded-md text-text"
                     pendingText="Signing In..."
                 >
                     Sign in with Google
                 </SubmitButton> */}
                 <SubmitButton
                     formAction={signIn}
-                    className="px-4 py-2 mb-2 bg-green-700 rounded-md text-foreground"
+                    className="px-4 py-2 mb-2 bg-green-700 rounded-md text-text"
                     pendingText="Signing In..."
                 >
                     Sign In
                 </SubmitButton>
                 <SubmitButton
                     formAction={signUp}
-                    className="px-4 py-2 mb-2 border rounded-md border-foreground/20 text-foreground"
+                    className="px-4 py-2 mb-2 border rounded-md border-text/20 text-text"
                     pendingText="Signing Up..."
                 >
                     Sign Up
                 </SubmitButton>
                 {searchParams?.message && (
-                    <p className="p-4 mt-4 text-center bg-foreground/10 text-foreground">
+                    <p className="p-4 mt-4 text-center bg-text/10 text-text">
                         {searchParams.message}
                     </p>
                 )}

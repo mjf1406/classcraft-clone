@@ -1,8 +1,9 @@
 import { createClient } from "@/utils/supabase/server";
 import Body from "@/components/Body";
 import Footer from "@/components/ui/Footer";
-import NavAuthenticated from "@/components/ui/authenticated/NavAuthenticated";
+import Nav from "@/components/ui/Nav";
 import { redirect } from "next/navigation";
+import { NavBar } from "@/components/ui/NavBar";
 
 export default async function ProtectedPage() {
     const supabase = createClient();
@@ -22,7 +23,8 @@ export default async function ProtectedPage() {
                     This is a protected page that you can only see as an
                     authenticated user
                 </div>
-                <NavAuthenticated />
+                {/* <NavBar /> */}
+                <Nav />
             </div>
 
             <div className="flex flex-col flex-1 max-w-4xl gap-20 px-3 opacity-0 animate-in">

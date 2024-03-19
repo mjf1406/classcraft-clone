@@ -1,19 +1,5 @@
 import Logo from "@/components/icons/Logo";
 import AuthButton from "@/components/AuthButton";
-import { createClient } from "@/utils/supabase/server";
-
-const canInitSupabaseClient = () => {
-    // This function is just for the interactive tutorial.
-    // Feel free to remove it once you have Supabase connected.
-    try {
-        createClient();
-        return true;
-    } catch (e) {
-        return false;
-    }
-};
-
-const isSupabaseConnected = canInitSupabaseClient();
 
 export default function NavAuthenticated() {
     return (
@@ -36,7 +22,7 @@ export default function NavAuthenticated() {
                         </a>
                     </div>
                 </div>
-                {isSupabaseConnected && <AuthButton />}
+                <AuthButton />
             </div>
         </nav>
     );

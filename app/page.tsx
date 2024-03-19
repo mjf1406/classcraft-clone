@@ -1,8 +1,5 @@
-import AuthButton from "../components/AuthButton";
-import { createClient } from "@/utils/supabase/server";
 import Body from "@/components/Body";
 import Nav from "@/components/ui/Nav";
-import Logo from "@/components/icons/Logo";
 import Footer from "@/components/ui/Footer";
 
 export default async function Index() {

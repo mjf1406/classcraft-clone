@@ -1,6 +1,8 @@
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import "@mantine/core/styles.css";
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -27,10 +29,15 @@ export default function RootLayout({
             lang="en"
             className={poppins.className}
         >
+            <head>
+                <ColorSchemeScript />
+            </head>
             <body className="bg-background-50 text-text-900">
-                <main className="flex flex-col items-center min-h-screen">
-                    {children}
-                </main>
+                <MantineProvider>
+                    <main className="flex flex-col items-center min-h-screen">
+                        {children}
+                    </main>
+                </MantineProvider>
             </body>
         </html>
     );

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://www.realtimecolors.com/?colors=002210-edfff4-1bfc76-6ffdd8-3efce3&fonts=Poppins-Poppins */
+
 @layer base {
     :root {
         --text-50: 148 100% 95%;

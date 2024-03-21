@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import "@mantine/core/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
                 <MantineProvider>
                     <main className="flex flex-col items-center min-h-screen">
                         {children}
+                        <SpeedInsights />
                     </main>
                 </MantineProvider>
             </body>
